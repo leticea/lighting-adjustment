@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,18 +19,62 @@ body {
 }
 
 main {
-  width: 430px;
-  height: 932px;
+  width: 43rem;
+  height: 93.2rem;
   background-color: #151515;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 52px;
+  padding: 5.2rem;
 }
 
 span {
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 3rem;
+  line-height: 3.8rem;
   text-align: center;
+}
+
+i {
+  font-size: 2.4rem;
+}
+
+main .controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32.1rem;
+  gap: 8.2rem;
+}
+
+.hue,
+.brightness,
+.contrast {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.hue > div,
+.brightness > div,
+.contrast > div {
+  display: flex;
+  align-items: center;
+  height: 0.5rem;
+}
+
+.hue > div {
+  background: linear-gradient(
+    90deg,
+    #ff0000 5.21%,
+    #ff8a00 16.48%,
+    #ffe600 27.74%,
+    #14ff00 39.35%,
+    #00a3ff 49.37%,
+    #0500ff 61.18%,
+    #ad00ff 72.26%,
+    #ff00c7 83.53%,
+    #ff0000 94.61%
+  );
+  border-radius: 12px;
 }
