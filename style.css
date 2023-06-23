@@ -77,3 +77,10 @@ main .controls {
     red
   );
 }
+
+input[type="range"] {
+  width: 28.1rem;
+  height: .5rem;
+  appearance: none;
+  background-color: transparent;
+}
