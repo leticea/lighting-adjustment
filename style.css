@@ -27,12 +27,15 @@ main {
   align-items: center;
   justify-content: center;
   padding: 5.2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 span {
   font-size: 3rem;
   line-height: 3.8rem;
   text-align: center;
+  margin: 35rem 0 10rem;
 }
 
 i {
@@ -102,4 +105,15 @@ input[type="range"] {
 .brightness > div > input[type="range"]::-webkit-slider-thumb,
 .contrast > div > input[type="range"]::-webkit-slider-thumb {
   background-color: #151515;
+}
+
+main .preview {
+  display: flex;
+  width: 84.6rem;
+  height: 84.6rem;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 0px 0px 53px 13px red;
+  position: absolute;
+  top: -50rem;
 }
